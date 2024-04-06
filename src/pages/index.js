@@ -10,7 +10,7 @@ export default function Home() {
   const handlereq = async (e)=>{
     try {
       
-      const response = await fetch('http://localhost:3000/api/meme');
+      const response = await fetch('https://meme-generator-ashen-eta.vercel.app/api/hello');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
